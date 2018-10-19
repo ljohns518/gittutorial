@@ -50,7 +50,7 @@ theme_presentation <- function(base_size = 28, base_family = "") {
       legend.background = element_rect(fill = "transparent", colour = NA),
       legend.key = element_rect(fill = "transparent", colour = NA),
       legend.text = element_text(size = 16, colour = "grey35"),
-      legend.title = element_text(size = 16, colour = "grey35"),
+      legend.title = element_text(size = 16, colour = "grey35")
     )
 }
 
