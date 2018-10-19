@@ -21,12 +21,6 @@ theme_publication <- function(base_size = 12, base_family = "") {
     )
 }
 
-plotA <- ggplot() +
-  geom_point(data = mpg, aes(x = cty, y = hwy, colour = factor(cyl))) +
-  labs(title = "Publication Theme", caption = "This is my figure for publications") +
-  theme_publication()
-
-ggsave(plotA, file = "20181019_hw_publication.png", width = 15, height = 7)
 
 theme_presentation <- function(base_size = 28, base_family = "") {
   theme_minimal(base_size = base_size, base_family = base_family) %+replace%
@@ -53,11 +47,3 @@ theme_presentation <- function(base_size = 28, base_family = "") {
       legend.title = element_text(size = 16, colour = "grey35")
     )
 }
-
-plotB <- ggplot() +
-  geom_point(data = mpg, aes(x = cty, y = hwy, colour = factor(cyl))) +
-  labs(title = "Presentation Theme") +
-  theme_presentation()
-
-ggsave(plotB, file = "20181019_hw_presentation.png", width = 15, height = 7)
-
